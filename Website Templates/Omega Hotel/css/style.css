@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#toolbar {
+    text-align: right;
+    width: 120px;
+    margin: 30px auto;
+    margin-top: 0;
+}
+
+#toolbar>#info>a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+}
+
+#top {
+    color: black;
+}
+
+#top>#logo {
+    background: lemonchiffon url(../images/logo.png) no-repeat center center;
+    border: 0px solid black;
+    width: 115px;
+    height: 89px;
+    margin: -39px 17px;
+    background-size: cover;
+    display: inline-block;
+}
+
+#top>#menu {
+    margin: 4px auto;
+    width: 470px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border: 1px solid black;
+    border-radius: 1%;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#middle>#picture {
+    background: lemonchiffon url(../images/pool.jpg) no-repeat center center;
+    border: 0px solid black;
+    width: 100%;
+    height: 380px;
+    margin: 13px 0px;
+    background-size: cover;
+}
+
+#middle>#contact {
+    background: lemonchiffon url(../images/contact.jpg) no-repeat center center;
+    border: 0px solid black;
+    width: 100%;
+    height: 380px;
+    margin: 13px 0px;
+    background-size: cover;
+}
+
+#middle>#services {
+    background: lemonchiffon url(../images/services.jpg) no-repeat center center;
+    border: 0px solid black;
+    width: 100%;
+    height: 380px;
+    margin: 13px 0px;
+    background-size: cover;
+}
+
+#middle>#lobby {
+    background: lemonchiffon url(../images/lobby.jpg) no-repeat center center;
+    border: 0px solid black;
+    width: 100%;
+    height: 380px;
+    margin: 13px 0px;
+    background-size: cover;
+}
+
+#middle>#picture>#icon {
+    background-color: rgba(34, 46, 58, 0.5);
+    height: 380px;
+    width: 285px;
+    float: right;
+    color: white;
+}
+
+#middle>#contact>#icon {
+    background-color: rgba(34, 46, 58, 0.5);
+    height: 380px;
+    width: 285px;
+    float: right;
+    color: white;
+    display: inline-block;
+}
+
+#middle>#services>#icon {
+    background-color: rgba(34, 46, 58, 0.5);
+    height: 380px;
+    width: 285px;
+    float: right;
+    color: white;
+    display: inline-block;
+}
+
+#middle>#lobby>#icon {
+    background-color: rgba(34, 46, 58, 0.5);
+    height: 380px;
+    width: 285px;
+    float: right;
+    color: white;
+    display: inline-block;
+}
+
+#middle>#picture>#icon>h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 34px 0px;
+}
+
+#middle>#contact>#icon>h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 34px 0px;
+}
+
+#middle>#services>#icon>h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 34px 0px;
+}
+
+#middle>#lobby>#icon>h2 {
+    text-align: center;
+    font-size: 18px;
+    margin: 34px 0px;
+}
+
+#middle>#picture>#icon>form>label {
+    margin: 5px 5px;
+}
+
+#middle>#contact>#icon>form>label {
+    margin: 5px 5px;
+}
+
+#middle>#services>#icon>form>label {
+    margin: 5px 5px;
+}
+
+#middle>#lobby>#icon>form>label {
+    margin: 5px 5px;
+}
+
+#middle>#picture>#icon>form>input {
+    margin: 8px 0px;
+}
+
+#middle>#contact>#icon>form>input {
+    margin: 8px 0px;
+}
+
+#middle>#services>#icon>form>input {
+    margin: 8px 0px;
+}
+
+#middle>#lobby>#icon>form>input {
+    margin: 8px 0px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 1px 1px;
+    width: 285px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#room-content {
+    margin: 30px 30px;
+    padding: 10px;
+}
+
+#room-content>#standard {
+    margin: 0px 0px 80px 0px;
+}
+
+#room-content>#superior {
+    margin: 0px 0px 80px 0px;
+}
+
+#room-content>#suite {}
+
+#newmedia {
+    position: fixed;
+    z-index: 1000;
+    margin: 80px 0;
+}
+
+#maps {
+    border-right: 1.5px solid black;
+    width: 50%;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#address {
+    display: inline-block;
+}
+
+#middle>#content>.box {
+    background-color: rgba(34, 46, 58, 0.3);
+    height: 270px;
+    width: 290px;
+    margin: 0px 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#middle>#content>.box>.img-box {
+    border: 0px solid black;
+    width: 310px;
+    height: 155px;
+    margin: -10px -10px;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#middle>#content>.box>#imga {
+    background: lemonchiffon url(../images/love.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgb {
+    background: lemonchiffon url(../images/spa.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgc {
+    background: lemonchiffon url(../images/relax.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imga-service {
+    background: lemonchiffon url(../images/gym.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgb-service {
+    background: lemonchiffon url(../images/spasauna.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgc-service {
+    background: lemonchiffon url(../images/buffet.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgd-service {
+    background: lemonchiffon url(../images/bar.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imge-service {
+    background: lemonchiffon url(../images/market.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgf-service {
+    background: lemonchiffon url(../images/casino.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imga:hover {
+    background: lemonchiffon url(../images/love.jpg) no-repeat center center;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgb:hover {
+    background: lemonchiffon url(../images/spa.jpg) no-repeat center center;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgc:hover {
+    background: lemonchiffon url(../images/relax.jpg) no-repeat center center;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imga-service:hover {
+    background: lemonchiffon url(../images/gym.jpg) no-repeat center center;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgb-service:hover {
+    background: lemonchiffon url(../images/spasauna.jpg) no-repeat center center;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgc-service:hover {
+    background: lemonchiffon url(../images/buffet.jpg) no-repeat center center;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgd-service:hover {
+    background: lemonchiffon url(../images/bar.jpg) no-repeat center center;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imge-service:hover {
+    background: lemonchiffon url(../images/market.jpg) no-repeat center center;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+#middle>#content>.box>#imgf-service:hover {
+    background: lemonchiffon url(../images/casino.jpg) no-repeat center center;
+    opacity: 0.5;
+    background-size: cover;
+}
+
+#middle>#content>.box>.title-box>h3 {
+    margin: 10px 0px;
+}
+
+#middle>#content>.box>.content-box>p {
+    margin: 0 10;
+}
+
+#footer {
+    background-color: rgba(34, 46, 58, 0.3);
+}
+
+#footer>p {
+    text-align: center;
+}
+
+#payments>p {
+    text-align: center;
+}
+
+#payments>p>img {
+    width: 160px;
+    margin: 90px auto 0 auto;
+}
